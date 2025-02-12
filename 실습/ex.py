@@ -15,5 +15,8 @@ f3 = html[f1:f1 + 100][f2:60].find('</td>')
 
 f4 = html[f1:f1 + 100][f2:60][:f3].replace('<td class="number">', '')
 
-print(f'{args[0]}: {f4}원')
+if f4 == '':
+    print(f'\n 정확히 입력해 주세요. \n')
+else:
+    print(f'\n{args[0]}: {f4}원\n')
 
